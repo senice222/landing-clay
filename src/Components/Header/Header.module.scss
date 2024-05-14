@@ -1,0 +1,74 @@
+.Header {
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    img {
+        margin-left: 70px;
+        height: 63px;
+        width: auto;
+        margin-top: 7px;
+    }
+    .btnsWrapper {
+        margin-top: 7px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        margin-right: 70px;
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            margin-right: 30px;
+            transition: .2s;
+            cursor: pointer;
+            user-select: none;
+            &:hover {
+                color: #799385;
+            }
+        }
+        button {
+            width: 237px;
+            height: 48px;
+            color: white;
+            font-weight: 500;
+            border-radius: 20px;
+            font-size: 24px;
+            background-color: #799385;
+            border: 0;
+            transition: .2s;
+            cursor: pointer;
+            &:hover {
+                background-color: #FFF2AF;
+                color: #6F5126;
+            }
+            &:active {
+                background-color: #f3e6a6;
+                color: #6F5126;
+            }
+        }
+    }
+}
+.responsibleBtns {
+    display: none;
+}
+
+
+@media (max-width: 840px) {
+    
+    .Header {
+        z-index: 99;
+        background-color: #EAE9E7;
+        position: fixed;
+        top: 0;
+        .btnsWrapper {
+            display: none;
+        }
+        img {
+            margin-top: 0;
+            margin-left: 24px;
+        }
+        .responsibleBtns {
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+.reviewsContainer {
+    width: 100%;
+    margin-top: 63px;
+
+    .titleServices {
+        width: 430px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 61px;
+        font-family: FoglihtenNo06;
+        position: relative;
+        z-index: 2;
+    }
+
+    .heartAbosolute {
+        position: absolute;
+        margin-left: 250px;
+
+        svg {
+            path {
+                fill: #FFF2AF;
+
+            }
+        }
+    }
+    .reviewWrapper {
+        margin-top: 35px;
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+        // .marginBlock {
+        //     margin-left: 20px
+        // }
+        .marginBlockWithImg {
+            padding: 10px !important;
+            // margin-left: 20px;
+            .descr {
+                padding: 10px
+            }
+        }
+        .firstItem {
+            width: 424px;
+            margin-top: 17px;
+            background-color: #FFF;
+            border-radius: 30px;
+            padding: 20px;
+            margin-left: 10px;
+            margin-rigth: 15px;
+            // display: flex;
+            // flex-wrap: wrap;
+            .littleImg {
+                margin: 5px;
+            }
+
+            .imgDiv {
+                margin-left: 12px;
+            }
+
+            .descr {
+                h3 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+                p {
+                    margin-top: 5px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .firstItem {
+        width: 95vw !important;
+    }
+    .marginBlockWithImg {
+        display: flex;
+        flex-wrap: wrap;
+
+        .littleImg {
+            width: 150px !important;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .firstItem {
+        width: 95vw !important;
+    }
+    .reviewWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .marginBlockWithImg {
+        display: flex;
+        flex-wrap: wrap;
+
+        .littleImg {
+            width: 192px;
+        }
+    }
+    .titleServices {
+        width: 100% !important;
+        font-size: 38px !important;
+    }
+    .firstItem {
+        width: 95%;
+        
+        img {
+            width: 100%;
+        }
+    }
+}

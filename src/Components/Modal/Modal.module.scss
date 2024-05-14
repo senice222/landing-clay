@@ -1,0 +1,189 @@
+.modalBg {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s ease-in-out;
+    position: fixed;
+    background-color: #79938571;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .title1 {
+        margin-top: 20px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 35px;
+        background-color: #C1C9B2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 33%;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .cross {
+        cursor: pointer;
+        margin-top: 23px;
+        margin-right: 20px;
+    }
+}
+.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.content {
+    width: 650px;
+    border-radius: 40px;
+    background-color: #FFF;
+    .form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        align-items: center;
+
+        .title {
+            font-family: FoglihtenNo06;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 46px;
+            text-align: center;
+        }
+
+        .inputs {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            label {
+                margin-left: 5px;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            .formInput {
+                background-color: #FFF;
+                padding-left: 10px;
+                font-size: 19px;
+                line-height: 23px;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid #799385;
+            }
+        }
+    }
+}
+
+
+.select {
+    div:hover {
+        border: 1px solid #799385 !important;
+    }
+    span {
+        // font-family: "Raleway, sans-serif" !important;
+        font-size: 22px !important;
+    }
+}   
+.selectDiv {
+    width: 100%;
+}
+.select {
+    div:focus {
+        border: 1px solid #799385 !important;   
+    }
+}
+.select {
+    div:active {
+        border: 1px solid #799385 !important;   
+    }
+}
+.pay {
+    background-color: #799385;
+    color: #FFFFFF;
+    border-radius: 35px;
+    width: 100%;
+    height: 55px;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    margin-top: 30px;
+    line-height: 28px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.pay:hover {
+    background-color: #4F6057;
+}
+
+@media (max-width: 1100px) {
+    
+    .content {
+        width: 90%;
+    }
+    .title1 {
+        margin-left: 40% !important;
+        font-size: 20px !important;
+    }
+    .inputs {
+        margin-top: 10px !important;
+    }
+    .title {
+        font-size: 23px !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+    .formInput {
+        height: 32px !important;
+        font-size: 16px;
+    }
+    .title1 {
+        margin-left: 30% !important;
+        font-size: 18px !important;
+    }
+    .title {
+
+    }
+    .pay {
+        margin-top: 10px;
+    }
+    .form {
+        margin-bottom: 10px !important;
+    }
+    .select {
+        height: 32px !important;
+    }
+}
+
+.error {
+    margin-top: 5px;
+    color: rgb(202, 0, 0)
+}
+
+@media(max-width: 430px) {
+    .content {
+        width: 90%;
+    }
+    .title1 {
+        margin-left: 18% !important;
+        font-size: 20px !important;
+    }
+    .title {
+        // font-size: 28px !important;
+        font-weight: 500;
+    }
+}

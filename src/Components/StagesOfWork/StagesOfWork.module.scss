@@ -1,0 +1,116 @@
+.stagesContainer {
+    margin-top: 30px;
+
+    .masterText {
+        user-select: none;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 61px;
+        font-family: FoglihtenNo06;
+
+        span {
+            color: #6F5126;
+            font-family: FoglihtenNo06;
+        }
+    }
+
+    .descr {
+        user-select: none;
+        font-size: 36px;
+        line-height: 42px;
+        margin-top: 18px;
+    }
+
+    .stagesCarts {
+        margin-top: 51px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            line-height: 46.4px;
+            font-size: 36px;
+            font-weight: 500;
+            color: #6F5126;
+            font-family: FoglihtenNo06;
+        }
+
+        .wrappItems {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+
+            .item {
+                
+                width: 381px;
+                border-radius: 30px;
+                background-color: #FFFFFF;
+            }
+            .secondItem {
+                position: relative;
+                margin-top: -60px;
+                width: 381px;
+                border-radius: 30px;
+                background-color: #FFFFFF;
+                margin-bottom: 94px;
+            }
+            .heartDiv {
+                position: absolute;
+                margin-left: -20px;
+                margin-bottom: 5px
+            }
+
+            .content {
+                padding: 0 14px;
+                padding-top: 70px;
+                padding-bottom: 23px;
+                height: auto;
+                h3 {
+                    max-width: 260px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+
+                p {
+                    margin-top: 16px;
+                    font-size: 16.5px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .stagesContainer {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .masterText {
+        font-size: 29px !important;
+        line-height: 48px !important;
+    }
+    .descr {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    .wrappItems {
+        flex-direction: column;
+    }
+    .item {
+        width: auto !important;
+    }
+
+    .secondItem {
+        width: auto !important;
+        margin-left: 25px;
+        margin-top: 30px !important;            
+        margin-bottom: 30px !important;
+    }
+    .content {
+        p {
+            width: 100%;
+            word-wrap: break-word;
+        }
+    }
+}

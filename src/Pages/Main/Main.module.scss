@@ -1,0 +1,29 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    .row {
+        display: flex;  
+        align-items: center;
+        flex-direction: column;
+        width: 1320px;
+    }
+    .img {
+        margin-top: 20px;
+        background-color: #EAE9E7;
+    }
+}
+
+@media (max-width: 1400px) {
+    .row {
+        width: 90% !important;
+    }
+    .img {
+        width: 100%;
+    }
+}
+@media (max-width: 840px) {
+    .img {
+        margin-top: 80px !important;
+    }
+}

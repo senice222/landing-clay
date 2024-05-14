@@ -1,0 +1,13 @@
+export const Mail = () => {
+    return <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={16}
+    viewBox="0 0 24 16"
+    fill="none"
+  >
+    <rect x="0.5" y="0.5" width={23} height={15} rx="3.5" stroke="#C1C9B2" />
+    <path d="M5 4L12 7.5L19 4" stroke="#C1C9B2" strokeLinecap="round" />
+  </svg>
+  
+}

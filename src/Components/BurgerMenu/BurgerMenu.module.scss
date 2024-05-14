@@ -1,0 +1,55 @@
+.BurgerMenu {
+    z-index: 80;
+    width: 100vw;
+    position: fixed;
+    right: -100vw;
+    background-color: #EAE9E7;
+    height: 100vh;
+    transition: .3s;
+    display: flex;
+}
+.header {
+    z-index: 81;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .itemsCon {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 20px;
+
+        div {
+            cursor: pointer;
+            font-family: FoglihtenNo06;
+            font-weight: 500;
+            font-size: 24px;
+            width: 90%;
+            height: 42px;
+            border: 1px solid #C1C9B2;
+            border-radius: 15px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+        }
+        button {
+            margin-top: 25px;
+            background-color: #799385;
+            font-family: FoglihtenNo06;
+            color: white;
+            font-size: 24px;
+            border-radius: 20px;
+            border: none;
+            height: 48px;
+            cursor: pointer;
+            width: 90%;
+            border-radius: 20px;
+        }
+    }
+}
+.active {
+    right: 0;
+}
+

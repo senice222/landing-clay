@@ -1,0 +1,95 @@
+.Works {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        width: 420px;
+        font-size: 48px;
+        font-family: FoglihtenNo06;
+        font-weight: 500;
+        text-align: center;
+        z-index: 4;
+        position: relative;
+        span {
+            font-family: FoglihtenNo06;
+            color: #6F5126;
+        }
+    }
+    .heart {
+        position: absolute;
+        z-index: 1;
+        margin-top: -45px;
+        margin-left: -30px;
+    }
+    .blocks {
+        display: flex;
+        margin-top: 55px;
+        align-items: center;
+    }
+
+    .verticalDiv {
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        &:last-child {
+            margin-left: 140px;
+            position: relative;
+            margin-top: -5px;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .Works {
+        h1 {
+            font-size: 28px;
+            padding: 7px; 
+            margin-left: 15px;
+       }
+        .heart {
+            svg {
+                width: 60px;
+            height: auto;
+            }
+            margin-top: -20px;
+            margin-left: 30px;
+        }
+    }
+    .firstImg {
+        width: 100px;
+        height: auto;
+    }
+    .secondImg {
+        width: 110px;
+        height: auto;
+        margin-left: 10px !important;
+    }
+    .verticalDiv {
+        margin-left: 20px !important;
+    }
+    .thirdImg {
+        width: 120px;
+        height: auto;
+        margin-left: 10px !important;
+    }
+    .fourthImg {
+        width: 70px;
+    }
+    .FifthImg {
+        width: 70px;
+        height: auto;
+        margin-left: 10px !important;
+    }
+    .SixthImg {
+        width: 90px;
+        height: auto;
+        margin-left: 0 !important;
+    }
+    .seventh {
+        width: 90px;
+        height: auto;
+    }
+    .textExample {
+        width: 95% !important;
+    }
+}
