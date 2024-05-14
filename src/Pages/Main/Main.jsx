@@ -1,4 +1,4 @@
-import { Header } from '../../Components/Header/Header'
+import Header from '../../Components/Header/Header'
 import gsap from 'gsap';
 import { useRef, useState } from 'react'
 import ScrollToPlugin from 'gsap/ScrollToPlugin'
@@ -6,11 +6,11 @@ import s from './Main.module.scss'
 import img from '../../assets/mainImg.png'
 import StagesOfWork from '../../Components/StagesOfWork/StagesOfWork'
 import Services from '../../Components/Services/Services'
-import { MasterClass } from '../../Components/MasterClass/MasterClass'
+import MasterClass from '../../Components/MasterClass/MasterClass'
 import Works from '../../Components/Works/Works'
 import Reviews from '../../Components/Reviews/Reviews'
 import Footer from '../../Components/Footer/Footer'
-import { Modal } from '../../Components/Modal/Modal';
+import Modal from '../../Components/Modal/Modal';
 
 const Main = () => {
     gsap.registerPlugin(ScrollToPlugin)

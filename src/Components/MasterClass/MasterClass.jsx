@@ -10,7 +10,7 @@ import b from '../../assets/b.png'
 import d from '../../assets/d.png'
 
 
-export const MasterClass = () => {
+const MasterClass = () => {
     return (
         <div className={s.MasterClass}>
             <h1 className={s.title}>Мастер-класс – это лепка руками или за гончарным кругом и декорирование в любой технике <span>сразу на занятии</span></h1>
@@ -61,3 +61,5 @@ export const MasterClass = () => {
         </div>
     )
 }
+
+export default MasterClass

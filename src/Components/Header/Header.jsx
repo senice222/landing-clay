@@ -3,7 +3,8 @@ import s from './Header.module.scss'
 import logo from '../../assets/logo.png'
 import './Header.scss'
 import BurgerMenu from '../BurgerMenu/BurgerMenu'
-export const Header = ({ blockRef1, blockRef2, blockRef3, scrollTo, openModal }) => {
+
+const Header = ({ blockRef1, blockRef2, blockRef3, scrollTo, openModal }) => {
     const [value, setValue] = useState(false)
 
     return (
@@ -33,3 +34,5 @@ export const Header = ({ blockRef1, blockRef2, blockRef3, scrollTo, openModal })
         </>
     )
 }
+
+export default Header

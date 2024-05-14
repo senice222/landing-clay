@@ -5,7 +5,7 @@ import { Select, Space } from 'antd';
 import { Cross } from './Svgs';
 import { useForm } from 'react-hook-form';
 
-export const Modal = ({ isOpened, setOpened, activeProduct }) => {
+const Modal = ({ isOpened, setOpened, activeProduct }) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     
     const handleChange = (value) => {
@@ -85,3 +85,5 @@ export const Modal = ({ isOpened, setOpened, activeProduct }) => {
         </div>
     )
 }
+
+export default Modal
